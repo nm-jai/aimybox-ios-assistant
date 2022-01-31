@@ -6,7 +6,7 @@ workflows:
         environment:
             vars:
                XCODE_WORKSPACE: "AimyboxUI.xcworkspace" # <-- Put the name of your Xcode workspace here
-               XCODE_SCHEME: "AimyBox" # <-- Put the name of your Xcode scheme here
+               XCODE_SCHEME: "AimyBoxCore" # <-- Put the name of your Xcode scheme here
             xcode: 13.0
             cocoapods: default
         scripts:
