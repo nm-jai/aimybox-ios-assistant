@@ -3,6 +3,15 @@ workflows:
     name: Hello world workflow
     scripts:
         - echo "Hello World!"
+
+script:
+- xcode-project build-ipa --project "MyXcodeProject.xcodeproj" --scheme "MyScheme"
+
+artifacts:
+  - build/ios/ipa/*.ipa
+  - /tmp/xcodebuild_logs/*.log
+  - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+
 email:
   recipients:
   - pitergaevoy@gmail.com
