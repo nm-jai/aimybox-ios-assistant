@@ -3,8 +3,8 @@ workflows:
         name: iOS App
         environment:
             vars:
-               XCODE_WORKSPACE: "your_workspace_name.xcworkspace" # <-- Put the name of your Xcode workspace here
-               XCODE_SCHEME: "your_workspace_name" # <-- Put the name of your Xcode scheme here
+               XCODE_WORKSPACE: "AimyboxUI.xcworkspace" # <-- Put the name of your Xcode workspace here
+               XCODE_SCHEME: "AimyboxUI" # <-- Put the name of your Xcode scheme here
             xcode: latest
             cocoapods: default
         scripts:
