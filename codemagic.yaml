@@ -3,3 +3,6 @@ workflows:
     name: Hello world workflow
     scripts:
         - echo "Hello World!"
+email:
+  recipients:
+  - pitergaevoy@gmail.com
