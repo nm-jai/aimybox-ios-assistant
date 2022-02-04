@@ -13,7 +13,7 @@ workflows:
                                 pod install
             - name: Build ipa for distribution
               script: |
-                                cd ExampleApp && xcodebuild build xcodebuild \
+                                cd ExampleApp && xcodebuild build \
                                 -project "$XCODE_PROJECT" \
                                 -scheme "$XCODE_SCHEME" \ 
                                 CODE_SIGN_INDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
